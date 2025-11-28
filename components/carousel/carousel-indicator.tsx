@@ -28,7 +28,6 @@ export function CarouselIndicator({
         ))}
       </div>
 
-      {/* ✅ Manual click toggle */}
       <button
         onClick={onTogglePlay}
         className="flex items-center gap-1 text-white/80 text-sm font-medium hover:text-white transition"

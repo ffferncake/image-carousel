@@ -5,12 +5,12 @@ interface CarouselItemProps {
 
 export function CarouselItem({ src, alt }: CarouselItemProps) {
   return (
-    <div className="flex-shrink-0 w-full h-[400px] relative">
+    <div className="relative h-[400px] w-full flex items-center justify-center overflow-hidden rounded-xl bg-[#0e162b]">
       <img
         src={src}
         alt={alt}
-        className="w-full h-full object-cover rounded-xl"
         draggable={false}
+        className="w-full h-full object-cover rounded-xl transition-transform duration-500 ease-in-out group-hover:scale-[1.02]"
       />
     </div>
   );
